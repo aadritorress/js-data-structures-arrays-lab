@@ -3,7 +3,7 @@
 const drivers = ["Milo", "Otis", "Garfield"]
 
 function destructivelyAppendDriver(name) {
-  drivers.push(name)
+  drivers.push(name);
   //appends a driver to the end of the drivers array
 }
 
@@ -23,14 +23,14 @@ function destructivelyRemoveFirstDriver() {
 }
 
 function appendDriver(name) {
-  let array = [name]
-  return ["Milo", "Otis", "Garfield", ...array]
+  let newDriver = [name]
+  return ["Milo", "Otis", "Garfield", ...newDriver]
   //appends a driver to the drivers array and returns a new array, leaving the drivers array unchanged
 }
 
 function prependDriver(name) {
-  let array = [name]
-  return [...array, "Milo", "Otis", "Garfield"]
+  let newDriver = [name]
+  return [...newDriver, "Milo", "Otis", "Garfield"]
   //prepends a driver to the drivers array and returns a new array, leaving the drivers array unchanged
 }
 
